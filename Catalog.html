@@ -24,7 +24,7 @@
 
   	<main>
 
-      <div>
+      <section>
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li> >> </li>
@@ -38,9 +38,42 @@
             <a href="#">8 812 450-25-25</a>
           </p>
         </div>
-      </div>
+        <div>
+           <h2>Сливочное мороженое</h2>
+        </div>
+      </section>
 
-      <h2>Сливочное мороженое</h2>
+      <section>
+        <div>
+          <p>Сортировка:</p>
+        <select>
+          <option>По популярности</option>
+          <option>По убыванию цены</option>
+          <option>По возрастанию цены</option>
+        </select>
+        <div>
+            <p>Цена: 100руб. - 500руб.</p>
+          <input type="range" name="price_range" min="0" max="500" step="1" value="250">
+        </div>
+        <div>
+          <p>Жирность:</p>
+          <label><input type="radio" name="fatty" value="1">0%</label>
+          <label><input type="radio" name="fatty" value="2">до 10%</label>
+          <label><input type="radio" name="fatty" value="3">до 30%</label>
+          <label><input type="radio" name="fatty" value="4">выше 30%</label>
+        </div>
+        <div>
+          <p>Наполнители:</p>
+          <label><input type="checkbox" name="filled" id="chocolate">шоколадные</label>
+          <label><input type="checkbox" name="filled" id="chocolate">сахарные присыпки</label>
+          <label><input type="checkbox" name="filled" id="chocolate">фрукты</label>
+          <label><input type="checkbox" name="filled" id="chocolate">сиропы</label>
+          <label><input type="checkbox" name="filled" id="chocolate">джемы</label>
+        </div>
+        <div>
+          <label><input type="button" name="aplly">Применить</label>
+        </div>
+      </section>
 
   		<section>
   			<ul>
