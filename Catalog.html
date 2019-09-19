@@ -3,28 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
-  	<header>
-  		<nav>
-  		<img src="img/header/logo_htmlacademy_icon.svg" alt="Логотип магазина Глейси">
-  			<ul>
-  				<li><a href="Catalog.html">Каталог</a></li>
-  				<li><a href="Delivery_pay.html">Доставка и оплата</a></li>
-  				<li><a href="Company">О Компании</a></li>
-  			</ul>
-  			<ul>
-  				<!-- Заготовка под будущие формы -->
-  				<li><Поиск</li>
-  				<li><Вход</li>
-  				<li><Корзина</li>
-  			</ul>
-  		</nav>
+
+    <header class="main_header">
+      <nav class="main_navigation"> 
+        
+        <a href="index.html"><img src="img/header/logo_htmlacademy_icon.svg" width="150" height="65" alt="Логотип магазина Глейси"></a>
+
+        <ul class="site_navigation">
+          <li><a href="Catalog.html">Каталог</a></li>
+            <ul class="hits_navigation">
+              <li><a href="#">Новинки</a></li>
+              <li><a href="Catalog.html">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
+          <li><a href="Delivery_pay.html">Доставка и оплата</a></li>
+          <li><a href="Company">О Компании</a></li>
+        </ul>
+        <ul class="user_navigation">
+          <!-- Заготовка под будущие формы -->
+          <li><Поиск</li>
+          <li><Вход</li>
+          <li><Корзина</li>
+        </ul>
+      </nav>
   	</header>
 
   	<main>
 
-      <section>
+      <section class="catalog_navigation">
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li> >> </li>
@@ -213,26 +226,26 @@
         </ul>
   		</section>
   	</main>
-  	 <footer>
-   	<div>
-  	 	<ul>
-   			<li><a href="#">Твиттер</a></li>
-   			<li><a href="#">Инстраграм</a></li>
-   			<li><a href="#">Фэйсбук</a></li>
-   			<li><a href="#">Вконтакте</a></li>
-  	 	</ul>
+  	<footer class="main_footer">
+    <div>
+      <ul class="footer_social">
+        <li><a href="#">Твиттер</a></li>
+        <li><a href="#">Инстраграм</a></li>
+        <li><a href="#">Фэйсбук</a></li>
+        <li><a href="#">Вконтакте</a></li>
+      </ul>
    </div>
    <div>
-   	<ul>
-   		<li><a href="#">Для поставщиков</a></li>
-   		<li><a href="#">Наши документы</a></li>
-   		<li><a href="#">О производстве</a></li>
-   		<li><a href="#">Экологические стандарты</a></li>
-   	</ul>
+    <ul class="footer_about_us">
+      <li><a href="#">Для поставщиков</a></li>
+      <li><a href="#">Наши документы</a></li>
+      <li><a href="#">О производстве</a></li>
+      <li><a href="#">Экологические стандарты</a></li>
+    </ul>
    </div>
-   <p>
-   	<img src="img/footer/logo_htmlacademy_small.svg" alt="Логотип академии">
-   	<a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy © 2019</a>
+   <p class="footer_copyright">
+    <img src="img/footer/logo_htmlacademy_small.svg" alt="Логотип академии">
+    <a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy © 2019</a>
    </p>
    </footer>
   </body>

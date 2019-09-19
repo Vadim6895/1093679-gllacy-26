@@ -1,0 +1,97 @@
+body {
+	background-color: rgb(132,157,143);
+	font-family: "Roboto","sans-serif";
+	font-size:16px;
+	line-height: 22px;
+	font-weight:normal;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+.site_navigation,
+.hits_navigation,
+.user_navigation {
+	list-style: none;
+}
+.site_navigation, {
+	line-height:18px;
+}
+.banners {
+	font-size: 18px;
+}
+.banners h2 {
+	font-size: 35px;
+	line-height:41px;
+}
+.banners a {
+	font-size: 18px;
+	line-height: 24px;
+}
+.about_us h2 {
+	font-size: 24px;
+	line-height: 30px;
+	color:black;
+}
+.about_us ul {
+	list-style: none;
+	text-align: left;
+	color: black;
+}
+.news h3{
+	font-size: 24px;
+	line-height: 30px;
+	text-decoration-line: underline;
+}
+.subscribe {
+	color: rgb(90,90,90);
+}
+.feedback {
+	font-size: 16px;
+	line-height: 24px;
+}
+.feedback h2 {
+	font-size:24px;
+	line-height:28px;
+}
+.contacts {
+	font-size:14px;
+	line-height: 20px;
+}
+.contacts b {
+	font-size: 18px;
+	line-height:24px;
+}
+.footer_about_us {
+	font-size: 13px;
+	line-height: 18px;
+}
+.footer_copyright {
+	font-size: 12px;
+	line-height: 18px;
+}
+.main_footer ul {
+	list-style: none;
+}
+button {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.catalog_navigation {
+	list-style: none;
+	font-size: 14px;
+	line-height: 16px;
+}
+.catalog_navigation h2 {
+	font-size: 35px;
+	line-height: 42px;
+}
+.catalog_navigation ul {
+	list-style: none;
+}
+span {
+	font-size: 45px;
+}
