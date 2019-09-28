@@ -1,5 +1,5 @@
 body {
-	background-color: rgb(132,157,143);
+	background-color: #849d8f;
 	font-family: "Roboto","sans-serif";
 	font-size:16px;
 	line-height: 22px;
@@ -10,17 +10,31 @@ body {
 a {
 	text-decoration: none;
 	color: white;
+	border-bottom: 1px solid #b1c9bb;
 }
-.site_navigation,
+.visually-hidden {
+	position : absolute;
+	width : 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding : 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.hits_catalog,
 .hits_navigation,
-.user_navigation {
+.user_navigation,
+.list_hits,
+.cite_navigation {
 	list-style: none;
 }
-.site_navigation, {
+.сite_navigation, {
 	line-height:18px;
 }
 .banners {
 	font-size: 18px;
+	line-height: 22px;
 }
 .banners h2 {
 	font-size: 35px;
@@ -36,14 +50,20 @@ a {
 	color:black;
 }
 .about_us ul {
+	font-size: 16px;
+	line-height: 22px;
 	list-style: none;
 	text-align: left;
-	color: black;
+	color: #000000;
 }
 .news h3{
 	font-size: 24px;
 	line-height: 30px;
-	text-decoration-line: underline;
+}
+.news a {
+	text-decoration: none;
+	border-bottom: 2px solid #000000;
+	color: #000000;
 }
 .subscribe {
 	color: rgb(90,90,90);
@@ -59,6 +79,7 @@ a {
 .contacts {
 	font-size:14px;
 	line-height: 20px;
+	color :#000000;
 }
 .contacts b {
 	font-size: 18px;
@@ -94,4 +115,165 @@ button {
 }
 span {
 	font-size: 45px;
+}
+.banner_raspberry {
+	background-color: #849d8f;
+	background-image: url('../img/banners/raspberry_bg.png');
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	
+	border-radius: 20px;
+}
+.banner_chocolate {
+	background-color: #849d8f;
+	background-image: url('../img/banners/chocolate_bg.png');
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	
+	border-radius: 20px;
+}
+.about_us {
+	background color: #f2e9d5;
+	background-image: url('../img/seo/waffle_background.png');
+	background-repeat: repeat;
+	box-sizing: border-box;
+	
+	border-radius: 20px;
+
+}
+.news {
+	background-color: #ffffff;
+	background-image: url('../img/news/strawberry_bg.png');
+	background-repeat: no-repeat;
+	background-position: -50px -220px;
+	color:#000000;
+	box-sizing: border-box;
+	
+	border-radius: 20px;
+}
+
+.mail_wrapper {
+	background-image: url('../img/subscribe/subscription_bg.png');
+	border-radius: 20px;
+	box-sizing: border-box;
+	
+	border-radius: 20px;
+}
+.subscribe {
+	background-color: #ffffff;
+	
+	}
+.contacts {
+	background-color: #849d8f;
+	background-image: url('../img/map/map.png');
+	background-repeat: no-repeat;
+}
+/*Стили для сеток --------------------------------------*/
+body {
+	min-width: 1250px;
+	min-height: 2449px;
+}
+/* header --------------------*/
+.main_header {
+	margin: 10px 27px;
+	display: flex;
+	justify-content: space-between;
+	border: 2px solid black;
+}
+.main_navigation {
+	border: 2px solid blue;
+	display: flex;
+	justify-content: space-between;
+	width: 600px;
+}
+.cite_navigation {
+	display: flex;
+	justify-content: space-between;
+	border:3px solid white;
+	width: 400px;
+	
+}
+.user_navigation {
+	display: flex;
+	justify-content: space-between;
+	border: 2px solid white;
+	width: 200px;
+}
+/* header --------------------*/
+.wrapper {
+	display: flex;
+	border: 2px solid white;
+}
+.cite-wrapper {
+	display: flex;
+	flex-direction: column;
+	border: 3px solid black;	
+	width: 1145px;
+	margin: 0 auto;
+}
+.slider {
+	width: 1200px;  /*место для слайдера */
+	height: 565px;
+}
+.banners {
+	display: flex;
+	justify-content: space-between;
+	width: 1145px;
+	border:1px solid black;
+}
+.banner_raspberry {
+	width: 560px;
+	min-height: 230px;
+}
+.banner_chocolate {
+	width: 560px;
+	min-height: 230px;
+}
+.list_hits {
+	display: flex;
+	margin-top: 40px;
+	width: 1145px;
+	border:1px solid black;
+	padding: 0;
+}
+.hit_item {
+	border:1px solid white;
+	width: 285px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.about_us {
+
+}
+.wrapper_news_subscribe {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 40px;
+}
+.news {
+	width: 560px;
+}
+.mail_wrapper {
+	width: 560px;
+}
+.contacts {
+	width: 1200px;
+	height: 430px;
+	display: flex;
+	flex-direction: column;
+	border:3px solid black;
+	margin-top: 40px;
+	align-self: center;
+	
+}
+.contacts_office {
+	background-color: #ffffff;
+	width: 300px;
+	align-self: flex-end;
+	margin: 80px 20px;
+}
+.main_footer {
+	display: flex;
+	justify-content: space-between;
 }
