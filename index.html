@@ -9,31 +9,63 @@
   </head>
   <body>
 
-  	<header class="main_header">
-      <div class="wrapper_main_cite_nav">
-  		<nav class="main_navigation"> 
-  			<img src="img/header/logo_htmlacademy_icon.svg" width="150" height="65" alt="Логотип магазина Глейси">
-  			<ul class="cite_navigation">
-  				<li><a href="Catalog.html">Каталог</a></li>
-            <ul class="hits_navigation visually-hidden">
-              <li><a href="#">Новинки</a></li>
-              <li><a href="Catalog.html">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li>
-            </ul>
-  				<li><a href="Delivery_pay.html">Доставка и оплата</a></li>
-  				<li><a href="Company">О Компании</a></li>
-  			</ul>
-      </div>
-  			<ul class="user_navigation">
-  				<!-- Заготовка под будущие формы -->
-  				<li><Поиск</li>
-  				<li><Вход</li>
-  				<li><Корзина</li>
-  			</ul>
-  		</nav>
+  	
+ 
+  	<main>  
+      <!--slider -->
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+    <div class="site-wrapper">
+      <div class="container">
+        <header class="main_header">
+          <nav class="main_navigation"> 
+        <img src="img/header/logo_htmlacademy_icon.svg" width="150" height="65" alt="Логотип магазина Глейси">
+        <ul class="cite_navigation">
+          <li>
+            <a href="catalog.html">Каталог</a>
+              <ul class="hits_navigation">
+                <li><a href="#">Новинки</a></li>
+                <li><a href="Catalog.html">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
+          <li><a href="Delivery_pay.html">Доставка и оплата</a></li>
+          <li><a href="Company">О Компании</a></li>
+        </ul>
+  
+        <ul class="user_navigation">
+          <li><a href="#" class="find">       
+            <span class="visually-hidden">Поиск</span></a></li>
+          <li><a href="#" class="login">Вход</a></li>
+          <li><a href="#" class="basket">Корзина</a></li>
+        </ul>
+
+         <section class="login_form visually-hidden">
+         <h2 class="visually-hidden">Форма входа</h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="mail" class="visually-hidden">Ваша почта ?</label>
+              <input type="text" name="mail" value="" placeholder="Электронная почта" id="mail">
+            </p>
+            <p>
+              <label for="password" class="visually-hidden">Ваш пароль ?</label>
+              <input type="text" name="password" value="" placeholder="asdsad" id="password">
+            </p>
+              <button type="submit" class="button">Войти</button>
+              <p>
+                <a href="#">Забыли пароль ?</a>
+                <a href="#">Новая регистрация</a>
+              </p>
+          </form>
+       </section>
+
+      </nav>
+
       <form class="find_form visually-hidden" method="post" action="https://echo.htmlacademy.ru">
+        <h2 class="visually-hidden">Форма поиска</h2>
         <p>
           <label for="userfind">Что ищем ?</label>
           <input type="text" name="find" value="" placeholder="Что ищем ?" id="userfind">
@@ -42,8 +74,8 @@
 
       <form class="login_form visually-hidden" method="post" action="https://echo.htmlacademy.ru">
         <p>
-          <label for="usermail">Электронная почта</label>
-          <input type="text" name="mail" value="" placeholder="Электронная почта" id="usermail">
+          <label for="usermailbox">Электронная почта</label>
+          <input type="text" name="mail" value="" placeholder="Электронная почта" id="usermailbox">
         </p>
         <p>
           <label for="userpassword">Пароль</label>
@@ -56,87 +88,107 @@
       <form class="make_order visually-hidden" action="https://echo.htmlacademy.ru" method="post">
         <button type="submit">Оформить заказ</button>
       </form>
-  	</header>
- <div class="wrapper">
-  	<main class="cite-wrapper">
-      
-      <section>
-        <div class="slider">        <!--Будущий слайдер  -->
-          <div class="slide-1"></div>
-          <div class="slide-2"></div>
-          <div class="slide-3"></div>
-        </div>
+        </header>
+
+
+        <section class="slider">
+          <div class="slider-controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item slide" id="slide1">
+              <h3 class="slide-title">
+                Крем-брюле и пломбир с малиновым джемом
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide2">
+              <h3 class="slide-title">
+                Шоколадный пломбир и лимонный сорбет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide3">
+              <h3 class="slide-title">
+                Пломбир с помадкой и клубничный щербет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+          </ul>
+        </section><!--/slider -->
+         
+
         <section class="banners">
           <article class="banner_raspberry">
-         <!-- <img src="img/banners/raspberry_bg.png" alt="Малинка" width="350" height="250">-->
           	<h2>Малинка даром!</h2>
           	<p>При покупке 2кг любого фруктового мороженого,добавим<br>
             		в ваш заказ банку малинового варенья бесплатно<br>
           	</p>
-          	<a href="#">Хочу варенье!</a>
+          	<a href="#" class="button">Хочу варенье!</a>
           </article>
           <article class="banner_chocolate">
-          <!--<img src="img/banners/chocolate_bg.png" alt="Шоколад" width="350" height="250">
-          	--><h2>Шоколадки даром!</h2>
+          	<h2>Шоколадки даром!</h2>
           	<p>При покупке 2кг пломбира, добавим в ваш заказ упаковку<br>
             вкуснейшей шоколадной присыпки совершенно бесплатно<br>
           	</p>
-          	<a href="#">Хочу шоколадки</a>
+          	<a href="#" class="button">Хочу шоколадки</a>
           </article>
         </section>
-      </section>
 
       <section class="main_hits">
+        <h2 class="visually-hidden">Наши главные хиты !</h2>
         <ul class="list_hits">
           <li class="hit_item">
             <img src="img/hits/icecream_card1.png" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
             <p>
-              <span>310&#8381</span> 
-              <span>кг</span>
+              <span>310&#8381;</span> 
+              <span>/кг</span>
             </p>
             <p>
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </p>
-            <a href="#">Быстрый просмотр</a>
+            <a href="#" class="button visually-hidden">Быстрый просмотр</a>
           </li>
            <li class="hit_item">
             <img src="img/hits/icecream_card2.png" alt="Сливочное-кофейное с кусочками шоколада" width="267" height="267">
             <p>
-              <span>380&#8381</span>
-              <span>кг</span>
+              <span>380&#8381;</span>
+              <span>/кг</span>
             </p>
             <p>
               <a href="#">Сливочное-кофейное с кусочками шоколада</a>
             </p>
-            <a href="#">Быстрый просмотр</a>
+            <a href="#" class="button visually-hidden">Быстрый просмотр</a>
           </li> 
            <li class="hit_item">
             <img src="img/hits/icecream_card3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
             <p>
-              <span>355&#8381</span>
-              <span>кг</span>
+              <span>355&#8381;</span>
+              <span>/кг</span>
             </p>
             <p>
               <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </p>
-            <a href="#">Быстрый просмотр</a>
+            <a href="#" class="button visually-hidden">Быстрый просмотр</a>
           </li> 
            <li class="hit_item">
             <img src="img/hits/icecream_card4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
             <p>
-              <span>415&#8381</span>
-              <span>кг</span>
+              <span>415&#8381;</span>
+              <span>/кг</span>
             </p>
             <p>
               <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
             </p>
-            <a href="#">Быстрый просмотр</a>
+            <a href="#" class="button visually-hidden">Быстрый просмотр</a>
           </li>   
         </ul>
       </section>
 
   		<section class="about_us">
-  			<h2>Магазин Глэйси - это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</h2>
+  			<h2>Магазин Глэйси - это онлайн- и офлайн- магазин по продаже мороженого собственного<br> производства на развес</h2>
   			<ul class="about_list">
   				<li class="about_item">
   					Всё наше мороженое изготавливается на собственном
@@ -161,9 +213,8 @@
   				</li>
   			</ul>
   		</section>
-      <div class="wrapper_news_subscribe">
+      <section class="wrapper_news_subscribe">
   		<article class="news">
-  			<!--<img src="img/news/strawberry_bg.png" alt="Клубника" width="450" height="350"> -->
   			<p>Новое в нашем блоге</p>
   			<h3><a href="#">
   				10 способов сервировки<br>
@@ -171,7 +222,7 @@
   				столу<br></a>
   			</h3>
   		</article>
-      <div class="mail_wrapper">
+      <section class="mail_wrapper">
   		  <article class="subscribe">
   			 <p>
   			 	 Подпишитесь на нашу сладкую рассылку и будете всегда в курсе<br>
@@ -179,14 +230,15 @@
   			 	 и не слать всякой ненужной ерунды. Честно=)<br>
   			 </p>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <label for="usermail">Электронная почта</label>
+            <label for="usermail" class="visually-hidden">Электронная почта</label>
             <input type="text" name="mail" id="usermail" value="" placeholder="Электронная почта">
-            <button type="submit">Отправить</button>
+            <button type="submit" class="button">Отправить</button>
           </form>
   		  </article>
-        </div> 
-        </div>
+        </section> 
+        </section>
   		<section class="contacts">
+        <h2 class="visually-hidden">Как нас найти</h2>
   		<!--	<img src="img/map/map.png" width="1300" height="600"> -->
   			<div class="contacts_office">
   				<p>Адрес главного офиса<br>
@@ -198,52 +250,57 @@
   					<b>8 812 450-25-25</b><br>
   					c (10 до 20 ежедневно)
   				</p>
-  				<button type="submit">Форма обратной связи</button>
-  			</div>
-        <div class="feedback visually-hidden">
+  				<button type="submit" class="button">Форма обратной связи</button>
+        </div>
+  			</section>
+
+        <section class="feedback visually-hidden">
          <h2>Мы вам обязательно ответим !</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
             <p>
-              <label for="username">Как вас зовут?</label>
-              <input type="text" name="name" value="" placeholder="Как вас зовут" id="username">
+              <label for="username" class="visually-hidden">Как вас зовут?</label>
+              <input type="text" name="name" value="" placeholder="Имя Фамилия" id="username">
             </p>
             <p>
-              <label for="usermail">Ваша почта для ответа ?</label>
-              <input type="text" name="mail" value="" placeholder="Ваша почта для ответа ?" id="usermail">
+              <label for="usermail" class="visually-hidden">Ваша почта для ответа ?</label>
+              <input type="text" name="mail" value="" placeholder="email@example.com" id="usermail">
             </p>
             <p>
-              <label for="usersomething">Напишите что-нибудь</label>
-              <input type="text" name="something" value="" placeholder="Напишите что-нибудь..." id="usersomething">
+              <label for="usersomething" class="visually-hidden">Напишите что-нибудь</label>
+              <textarea name="something"      placeholder="В свободной форме" id="usersomething"></textarea>
             </p>
               <button type="submit">Отправить</button>
+              <p>
+                <button class="feedback_close" type="button">
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+              </p>
           </form>
-       </div>
-  		</section>
-    </div>
-  	</main>
+       </section>
     
    <footer class="main_footer">
-   	<div>
+   
   	 	<ul class="footer_social">
-   			<li><a href="#">Твиттер</a></li>
-   			<li><a href="#">Инстраграм</a></li>
-   			<li><a href="#">Фэйсбук</a></li>
-   			<li><a href="#">Вконтакте</a></li>
+   			<li><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
+   			<li><a href="#"><span class="visually-hidden">Инстраграм</span></a></li>
+   			<li><a href="#"><span class="visually-hidden">Фэйсбук</span></a></li>
+   			<li><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
   	 	</ul>
-   </div>
-   <div>
-   	<ul class="footer_about_us">
-   		<li><a href="#">Для поставщиков</a></li>
-   		<li><a href="#">Наши документы</a></li>
-   		<li><a href="#">О производстве</a></li>
-   		<li><a href="#">Экологические стандарты</a></li>
-   	</ul>
-   </div>
-   <p class="footer_copyright">
-   	<img src="img/footer/logo_htmlacademy_small.svg" alt="Логотип академии">
-   	<a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy © 2019</a>
-   </p>
+    	<ul class="footer_about_us">
+   	  	<li><a href="#">Для поставщиков</a></li>
+   		 <li><a href="#">Наши документы</a></li>
+   		 <li><a href="#">О производстве</a></li>
+   		 <li><a href="#">Экологические стандарты</a></li>
+   	  </ul>
+
+     <article class="footer_copyright">
+   	  <img src="img/footer/logo_htmlacademy_small.svg" width="140" height="40" alt="Логотип академии">
+   	 <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+    </article>
    </footer>
 
-  </body>
+   </main>
+  </div>
+</div> 
+</body>
 </html>
