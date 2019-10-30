@@ -96,6 +96,9 @@ html {
 	background-color: #ffffff;
 	margin-top: 7px;
 }
+.creamy_link {
+	background-color: #f6b5a5;
+}
 .hits_navigation_link:hover {
 	background-color: #fbded7;
 	border-radius: 0;
@@ -643,7 +646,7 @@ html {
 	content: "";
 	position: absolute;
 	right: -10px;
-	top: 0;
+	top: -10px;
 
 	width: 293px;
 	height: 405px;
@@ -1175,13 +1178,13 @@ html {
     background:#d7dcde;
     width: 175px;
 }
-.bar{
+.bar {
     margin-left: 30px;
     width:100px;
     height:4px;
     background:#ffffff;
 }
-.toggle{
+.toggle {
     position:absolute;
     top:10px;
     left:30px;
@@ -1220,6 +1223,9 @@ html {
 }
 .checkbox_input {
 	display: none;		
+}
+.checkbox_group input[type="checkbox"] {
+	display: none;  /*for IE*/
 }
 .check_input {
 	-webkit-appearance:none;
@@ -1340,7 +1346,7 @@ html {
 	display: flex;
 	justify-content: space-between;
 	width: 200px;
-	margin-left: 920px;
+	margin-left: 910px;
 }
 .page_link {
 	padding: 5px 10px;
@@ -1360,6 +1366,7 @@ html {
 .back_page:before {
 	content: url('../img/catalog/icon_back_page_small.png');
 	padding: 5px 10px;
+	margin-left: -25px;
 }
 .next_page:before {
 	content: url('../img/catalog/icon_next_page_small.png');
