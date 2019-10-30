@@ -18,52 +18,52 @@
           <nav class="main_navigation"> 
             <img src="img/header/logo_htmlacademy_icon.svg" width="154" height="65" alt="Логотип магазина Глейси">
             <ul class="cite_navigation">
-              <li>
-                <a href="catalog.html">Каталог</a>
+              <li class="submenu_cite_navigation">
+                <a href="catalog.html" class="cite_navigation_link">Каталог</a>
                   <ul class="hits_navigation">
                     <li><span>Новинки</span></li>
-                    <li><a href="Catalog.html">Сливочное</a></li>
-                    <li><a href="#">Щербеты</a></li>
-                    <li><a href="#">Фруктовый лед</a></li>
-                    <li><a href="#">Мелорин</a></li>
+                    <li><a href="catalog.html" class="hits_navigation_link">Сливочное</a></li>
+                    <li><a href="#"  class="hits_navigation_link">Щербеты</a></li>
+                    <li><a href="#"  class="hits_navigation_link">Фруктовый лед</a></li>
+                    <li><a href="#"  class="hits_navigation_link">Мелорин</a></li>
                   </ul>
               </li>
-              <li><a href="Delivery_pay.html">Доставка и оплата</a></li>
-              <li><a href="Company">О Компании</a></li>
+              <li><a href="Delivery_pay.html" class="cite_navigation_link">Доставка и оплата</a></li>
+              <li><a href="Company" class="cite_navigation_link">О Компании</a></li>
             </ul>
-            <ul class="user_navigation">
-              <li>
-                <a href="#" class="find">       
-                  <span class="visually-hidden">Поиск</span>
-                </a>
-                <form class="find_form" method="post" action="https://echo.htmlacademy.ru">
-                 <h2 class="visually-hidden">Форма поиска</h2>
-                  <p>
-                    <label class="visually-hidden" for="userfind">Что ищем ?</label>
-                    <input type="text" name="find" value="" placeholder="Что ищем ?" id="userfind">
-                  </p>
-                </form>
-              </li>
-              <li>
-                <a href="#" class="login">Вход</a>
+             <ul class="user_navigation">
+                <li class="find_element">
+                  <a href="#" class="find user_link">       
+                    <span class="visually-hidden">Поиск</span>
+                  </a>
+                  <form class="find_form" method="post" action="https://echo.htmlacademy.ru">
+                   <h2 class="visually-hidden">Форма поиска</h2>
+                    <p>
+                      <label class="visually-hidden" for="userfind">Что ищем ?</label>
+                      <input type="text" name="find" value="" placeholder="Что ищем ?" id="userfind" class="find_input">
+                    </p>
+                  </form>
+                </li>
+              <li class="login_element">
+                <a href="#" class="login user_link">Вход</a>
                 <form class="login_form" action="https://echo.htmlacademy.ru" method="post">
                  <h2 class="visually-hidden">Форма входа</h2>
                   <p>
                     <label for="mail" class="visually-hidden">Ваша почта ?</label>
-                    <input type="text" name="mail" value="" placeholder="Электронная почта" id="mail">
+                    <input type="text" name="mail" value="" placeholder="Электронная почта" id="mail" required class="login_input">
                   </p>
                   <p>
                      <label for="password" class="visually-hidden">Ваш пароль ?</label>
-                     <input type="text" name="password" value="" placeholder="пароль" id="password">
+                     <input type="text" name="password" value="" placeholder="пароль" id="password" required class="login_input">
                   </p>
                   <button type="submit" class="button">Войти</button>
                   <p>
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
+                    <a href="#" class="login_link password_link">Забыли пароль?</a>
+                    <a href="#" class="login_link registration_link">Новая регистрация</a>
                   </p>
                 </form>
               </li>
-              <li><a href="#" class="basket">Пусто</a></li>
+              <li><a href="#" class="basket user_link">Пусто</a></li>
             </ul>
 
          </nav>
@@ -131,10 +131,10 @@
             <img src="img/hits/icecream_card1.png" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
             <p>
               <span>310&#8381;</span> 
-              <span>/кг</span>
+              <span class="item_heavy">/кг</span>
             </p>
-            <p>
-              <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <p class="hit_item_link">
+              <a href="#" class="item_link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </p>
             <a href="#" class="button">Быстрый просмотр</a>
           </li>
@@ -142,10 +142,10 @@
             <img src="img/hits/icecream_card2.png" alt="Сливочное-кофейное с кусочками шоколада" width="267" height="267">
             <p>
               <span>380&#8381;</span>
-              <span>/кг</span>
+              <span class="item_heavy">/кг</span>
             </p>
-            <p>
-              <a href="#">Сливочное-кофейное с кусочками шоколада</a>
+            <p class="hit_item_link">
+              <a href="#" class="item_link">Сливочное-кофейное с кусочками шоколада</a>
             </p>
             <a href="#" class="button">Быстрый просмотр</a>
           </li> 
@@ -153,10 +153,10 @@
             <img src="img/hits/icecream_card3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
             <p>
               <span>355&#8381;</span>
-              <span>/кг</span>
+              <span class="item_heavy">/кг</span>
             </p>
-            <p>
-              <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <p class="hit_item_link">
+              <a href="#" class="item_link">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </p>
             <a href="#" class="button">Быстрый просмотр</a>
           </li> 
@@ -164,10 +164,10 @@
             <img src="img/hits/icecream_card4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
             <p>
               <span>415&#8381;</span>
-              <span>/кг</span>
+              <span class="item_heavy">/кг</span>
             </p>
-            <p>
-              <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <p class="hit_item_link">
+              <a href="#" class="item_link">Сливочное крем-брюле с карамельной подливкой</a>
             </p>
             <a href="#" class="button">Быстрый просмотр</a>
           </li>   
@@ -204,7 +204,7 @@
         <h2 class="visually-hidden">Новости</h2>
   		<article class="news">
   			<p>Новое в нашем блоге</p>
-  			<h3><a href="#">
+  			<h3><a href="#" class="news_link">
   				10 способов сервировки<br>
   				фруктовых щербетов к<br>
   				столу<br></a>
@@ -221,7 +221,7 @@
   			 </p>
           <form action="https://echo.htmlacademy.ru" method="post">
             <label for="usermail" class="visually-hidden">Электронная почта</label>
-            <input type="text" name="mail" id="usermail" value="" placeholder="Электронная почта">
+            <input type="text" name="mail" id="usermail" value="" placeholder="Электронная почта" required class="input_subscribe">
             <button type="submit" class="button">Отправить</button>
           </form>
   		  </article>
@@ -230,45 +230,47 @@
       </main>
       </div>
 
-  		<section class="contacts">
+  		<section class="contacts modal_map">
         <h2 class="visually-hidden">Как нас найти</h2>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CGHaEA0N" width="100%" height="430" frameborder="1" allowfullscreen="true" alt="интерактивная карта"></iframe>
   			<div class="contacts_office">
   				<p>Адрес главного офиса<br>
   					и офлайн магазина:
   				</p>
-  				<p><b>ул. Большая конюшеная<br>
-  					19/8 Санкт-Петербург</b></p>
+  				<p class="contacts_location"><b>ул. Большая Конюшенная<br>
+  					19/8, Санкт-Петербург</b></p>
   				<p>Для заказов по телефону:<br>
-  					<b><a href="tel:+88124502525">8 812 450-25-25</a></b><br>
+  					<b><a href="tel:+88124502525" class="telephone">8 812 450-25-25</a></b><br>
   					c (10 до 20 ежедневно)
   				</p>
-  				<button type="submit" class="button">Форма обратной связи</button>
+          <a href="#" class="button feedback_button">Форма обратной связи</a>
         </div>
   			</section>
+    
 
         <section class="feedback visually-hidden">
          <h2>Мы вам обязательно ответим !</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
             <p>
               <label for="username" class="visually-hidden">Как вас зовут?</label>
-              <input type="text" name="name" value="" placeholder="Имя Фамилия" id="username">
+              <input type="text" name="name" value="" placeholder="Имя Фамилия" id="username" class="feedback_input">
             </p>
             <p>
               <label for="clientmail" class="visually-hidden">Ваша почта для ответа ?</label>
-              <input type="text" name="mail" value="" placeholder="email@example.com" id="clientmail">
+              <input type="text" name="mail" value="" placeholder="email@example.com" id="clientmail" class="feedback_input">
             </p>
             <p>
               <label for="usersomething" class="visually-hidden">Напишите что-нибудь</label>
-              <textarea name="something" placeholder="В свободной форме" id="usersomething"></textarea>
+              <textarea name="something" placeholder="В свободной форме" id="usersomething" class="feedback_textarea"></textarea>
             </p>
-              <button type="submit">Отправить</button>
+              <button type="submit" class="button">Отправить</button>
               <p>
                 <button class="feedback_close" type="button">
                   <span class="visually-hidden">Закрыть</span>
                 </button>
               </p>
           </form>
-       </section>
+        </section>
        
    <div class="footer_wrapper">
    <footer class="main_footer">
@@ -279,10 +281,10 @@
    			<li><a href="#" class="vkontakte"><span class="visually-hidden">Вконтакте</span></a></li>
   	 	</ul>
     	<ul class="footer_about_us">
-   	  	<li><a href="#" class="for_provisioner">Для поставщиков</a></li>
-   		 <li><a href="#">О производстве</a></li>
-   		 <li><a href="#">Наши документы</a></li>
-   		 <li><a href="#">Экологические стандарты</a></li>
+   	  	<li><a href="#" class="for_provisioner footer_about_link">Для поставщиков</a></li>
+   		 <li><a href="#" class="footer_about_link">О производстве</a></li>
+   		 <li><a href="#" class="footer_about_link">Наши документы</a></li>
+   		 <li><a href="#" class="footer_about_link">Экологические стандарты</a></li>
    	  </ul>
 
      <article class="footer_copyright">
@@ -290,11 +292,12 @@
       <a href="https://htmlacademy.ru/" class="logo">
    	    <img src="img/footer/logo_htmlacademy_small.svg" width="118" height="38" alt="Логотип академии">
       </a>
-   	 <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+   	 <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright_link">HTML Academy</a> © 2019</p>
     </article>
    </footer>
    </div>
 
  </div>
+ <script src="js/popup.js"></script>
 </body>
 </html>
