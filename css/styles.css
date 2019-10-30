@@ -368,7 +368,6 @@ html {
   background-image: url('../img/slider/product_1.png');
   background-repeat: no-repeat;
   background-position: top center;
-  
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -526,7 +525,7 @@ html {
 	padding-left: 3px;
 }
 .banner_raspberry {
-	background-color: #849d8f;
+	background-color: #9a9a9a;
 	background-image: url('../img/banners/raspberry_bg.png');
 	background-repeat: no-repeat;
 	border-radius: 20px;
@@ -536,7 +535,7 @@ html {
 	margin-right: 25px; 
 }
 .banner_chocolate {
-	background-color: #849d8f;
+	background-color: #9a9a9a;
 	background-image: url('../img/banners/chocolate_bg.png');
 	background-repeat: no-repeat;
 	border-radius: 20px;
@@ -657,7 +656,7 @@ html {
 }
 .hit_item_link {
 	display: inline-block;
-	
+	vertical-align: baseline;
 	position: relative;
 	height: 45px;
 	margin-top: 0px;
@@ -682,7 +681,7 @@ html {
 }
 /*-----------/inner-hits------------- */
 .about_us {
-	background-image: url('../img/seo/waffle_background.png');
+	background: #efe4cd url('../img/seo/waffle_background.png');
 	background-repeat: repeat;
 	border-radius: 15px;
 	height: 306px;
@@ -845,7 +844,7 @@ html {
 	position: absolute;
 	z-index: 3;
 	top: 62px;
-	right:  370px;
+	margin-left: 70%;
 }
 .contacts_office p {
 	margin-top: 8px;
@@ -1177,7 +1176,8 @@ html {
     width: 175px;
 }
 .bar{
-    margin-left: 30px; width:100px;
+    margin-left: 30px;
+    width:100px;
     height:4px;
     background:#ffffff;
 }
