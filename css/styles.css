@@ -122,7 +122,7 @@ html {
 .user_link{
 	text-decoration: none;
 	color: #ffffff;	
-	background: rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.2);
 	border-radius: 40px;
 	padding: 7px 12px; 
 	margin-right: 8px;
@@ -399,7 +399,7 @@ html {
 .slider {
   position: relative;
   
-  padding-top: 270px; 
+  padding-top: 265px;
   
   text-align: center;
   color: #ffffff;
@@ -531,7 +531,8 @@ html {
 	background-color: #9a9a9a;
 	background-image: url('../img/banners/raspberry_bg.png');
 	background-repeat: no-repeat;
-	border-radius: 20px;
+	background-position: left -50px top -94px;
+	border-radius: 15px;
 	width: 610px;
 	height: 230px;
 	padding-left: 17px;
@@ -541,7 +542,8 @@ html {
 	background-color: #9a9a9a;
 	background-image: url('../img/banners/chocolate_bg.png');
 	background-repeat: no-repeat;
-	border-radius: 20px;
+	background-position: right -52px top -104px;
+	border-radius: 15px;
 	width: 610px;
 	height: 230px;
 	padding-left: 20px;
@@ -586,13 +588,13 @@ html {
 	line-height: 45px;
 	font-weight: 500;
 	left: -79px;
-	margin-top: -64px;
+	margin-top: -66px;
 	width: 100%;  /*for ie*/
 }
 .hit_item .item_heavy {
 	font-size: 30px;
 	left: -2px;
-	margin-top: -58px;
+	margin-top: -61px;
 	
 	width: 100%; /*for IE*/
 }
@@ -682,7 +684,6 @@ html {
 	overflow: visible;
 	z-index: 2;
 }
-/*-----------/inner-hits------------- */
 .about_us {
 	background: #efe4cd url('../img/seo/waffle_background.png');
 	background-repeat: repeat;
@@ -750,9 +751,9 @@ html {
 	background-color: #ffffff;
 	background-image: url('../img/news/strawberry_bg.png');
 	background-repeat: no-repeat;
-	background-position: -50px -220px;
+	background-position: -52px -224px;
 	color:#000000;
-	border-radius: 20px;
+	border-radius: 15px;
 	min-width: 560px;
 	min-height: 220px;
 	padding-left: 20px;
@@ -781,18 +782,17 @@ html {
 .mail_wrapper {
 	background-color: #ffffff;
 	background-image: url('../img/subscribe/subscription_bg.png');
-	border-radius: 20px;
-	border-radius: 20px;
+	border-radius: 15px;
 	min-width: 560px;
 	min-height: 220px;
 }
 .subscribe {
-	border-radius: 20px;
+	border-radius: 15px;
 	display: inline-block;
 	vertical-align: baseline;
 	margin: 5px;
 	color: #000000;
-	background-color: #ffffff;
+	background-color: #f8f7f4;
 	width: 550px;
 	height: 210px;
 	padding-left: 20px;
@@ -809,13 +809,14 @@ html {
 	margin-top: -43px;
 	padding-right: 20px;
 	padding-left: 20px;
+	width: 128px;
 }
 .input_subscribe {
 	width:368px;
 	height:43px;
 	margin-top: 20px;
 	border: 1px solid #d3d3d2;
-	border-radius: 10px;
+	border-radius: 5px;
 	padding-left: 10px;
 }
 .input_subscribe:hover{
@@ -826,7 +827,7 @@ html {
 	background-image: url('../img/map/map.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin-top: 35px;
+	margin-top: 40px;
 	height: 430px;
 	z-index: 1;
 	position: relative; 
@@ -847,11 +848,14 @@ html {
 	position: absolute;
 	z-index: 3;
 	top: 62px;
-	margin-left: 70%;
+	margin-left: 64%;
 }
 .contacts_office p {
 	margin-top: 8px;
 	margin-bottom: 10px;
+}
+.contacts_office .main_office {
+	margin-bottom: -5px;
 }
 .contacts_location{
 	margin-top: -11px;
@@ -860,9 +864,9 @@ html {
 .contacts_office .button {
 	font-size: 18px;
 	line-height: 24px;
-	margin-left: 4px;
-	margin-top: 15px;
+	margin-top: 17px;
 	padding: 8px 24px 12px;
+	width: 250px;
 }
 .contacts_office .telephone {
 	text-decoration: none;
@@ -871,13 +875,14 @@ html {
 .modal_map iframe {
 	position: relative;
 	z-index: 2;
+	border: 0px;
 }
 .main_footer {
 	display: flex;
 	justify-content: space-between;
 	width: 1200px;
 	margin: 0 auto;
-	padding-top: 20px;
+	padding-top: 18px;
 	border-top: 1px solid #b4b4b4; 
 }
 .main_footer ul {
@@ -888,6 +893,9 @@ html {
 	width: 187px;
 	justify-content: space-between;
 	margin-left: -12px;
+}
+.footer_social li {
+	margin-right: 1px;
 }
 .twitter {
 	background-image: url('../img/footer/twitter.svg');	
@@ -943,6 +951,9 @@ html {
 	position: absolute;
 	left: -24px;
 	top: 3px;
+}
+.for_provisioner {
+	font-weight: 500;
 }
 .footer_copyright {
 	font-size: 12px;
@@ -1038,6 +1049,10 @@ html {
 .feedback_textarea:hover  {
 	border: 1px solid #868686;
 }
+.iframe_map {
+	width: 100%;
+	height: 430px;
+}
 /* -------------------inner------------------------*/
 .inner_container {
   width: 1200px;
@@ -1047,7 +1062,7 @@ html {
   background: linear-gradient(to bottom, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.0) 40%);
 }
 .inner_footer_wrapper {
-	margin-top: 113px; 
+	margin-top: 33px; 
 }
 .catalog_navigation {
 	display: flex;
@@ -1064,7 +1079,7 @@ html {
 	background-color: #ffffff;
 }
 .inner_cite_navigation {
-	margin-left: -355px;
+	margin-left: -330px;
 	margin-right: 0; 
 }
 .inner_cite_navigation li {
@@ -1111,7 +1126,7 @@ html {
 	font-size: 14px;
 }
 .sort_by_price select {
-	background: rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.2);
 	border-radius: 30px;
 	height: 36px;
 	color: #ffffff;
@@ -1166,7 +1181,7 @@ html {
     height:36px;
     margin-bottom:15px;
     padding:0 30px;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     overflow:hidden;
 }
@@ -1214,7 +1229,7 @@ html {
 	position: relative;
 }
 .checkbox_wrapper {
-	background: rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
 	width: 700px;    
 	height: 37px;
@@ -1268,7 +1283,7 @@ html {
 	height: 36px;
 	border-radius: 20px;
 	background-color: #9cb0a4;
-	background: rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.2);
 	color: #ffffff;
 	margin-top: 37px;
 	margin-left: 15px;
@@ -1284,7 +1299,7 @@ html {
 	margin-left: 30px;
 }
 .radio_wrapper {
-	background: rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
 	padding-top: 12px;
 	padding-left: 12px;
@@ -1346,7 +1361,8 @@ html {
 	display: flex;
 	justify-content: space-between;
 	width: 200px;
-	margin-left: 910px;
+	margin-left: 935px;
+	margin-top: 62px;
 }
 .page_link {
 	padding: 5px 10px;
@@ -1361,7 +1377,8 @@ html {
 }
 .first_page {
 	border-radius: 30px;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 1);
+	color: #000000;
 }
 .back_page:before {
 	content: url('../img/catalog/icon_back_page_small.png');
