@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style_min.css">
   </head>
   <body>
    <div class="inner_cite_wrapper">
@@ -29,9 +29,7 @@
               </ul>
               <ul class="user_navigation">
                 <li class="find_element">
-                  <h2 class="visually-hidden">Иконка поиска</h2>
-                  <a href="#" class="find user_link">       
-                  </a>
+                  <a href="#" class="find user_link"><span class="visually-hidden">Поиск</span></a>
                   <form class="find_form" method="post" action="https://echo.htmlacademy.ru">
                      <h2 class="visually-hidden">Форма поиска</h2>
                      <p>
@@ -41,7 +39,6 @@
                   </form>
                 </li>
                 <li class="login_element">
-                  <h2 class="visually-hidden">Иконка входа</h2>
                   <a href="#" class="login user_link">Вход</a>
                   <form class="login_form" action="https://echo.htmlacademy.ru" method="post">
                    <h2 class="visually-hidden">Форма входа</h2>
@@ -61,7 +58,6 @@
                   </form>
                 </li>
                 <li class="order_element">
-                  <h2 class="visually-hidden">Иконка корзины</h2>
                   <a href="#" class="basket user_link">Корзина</a>
                     <form class="order_form" action="https://echo.htmlacademy.ru" method="post">
                     <a href="#" class="order_product1">
@@ -149,7 +145,7 @@
             </div>
           </div>
 
-         <!-- <div class="checkbox_group">
+          <div class="checkbox_group">
             <p>Наполнители:</p>
             <div class="checkbox_wrapper">
               <label class="check">
@@ -182,43 +178,7 @@
                 <span class="check_description">джемы</span>
               </label>
             </div>
-          </div> -->
-
-          <div class="checkbox_group">
-            <p>Наполнители:</p>
-            <ul class="checkbox_wrapper">
-              <li class="check">
-                <span class="check_description">шоколадные</span>
-                <input type="checkbox" name="filled" checked class="check_input">
-                <span class="check_box"></span>
-              </li>
-
-              <li class="check">
-                <input type="checkbox" name="filled" id="sugar" checked class="check_input">
-                <span class="check_box"></span>
-                <span class="check_description">сахарные присыпки</span>
-              </li>
-
-              <li class="check">
-                <input type="checkbox" name="filled" id="fruits" class="check_input">
-                <span class="check_box"></span>
-                <span class="check_description">фрукты</span>
-              </li>
-
-              <li class="check">
-                <input type="checkbox" name="filled" id="syrup" class="check_input">
-                <span class="check_box"></span>
-                <span class="check_description">сиропы</span>
-              </li>
-
-              <li class="check">
-                <input type="checkbox" name="filled" id="jam" class="check_input">
-                <span class="check_box"></span>
-                <span class="check_description">джемы</span>
-              </li>
-            </ul>
-          </div>
-
+          </div> 
 
             <input type="submit" name="aplly" value="Применить" id="aplly" class="apply_button">
         </form>

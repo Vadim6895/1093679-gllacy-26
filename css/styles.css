@@ -66,13 +66,24 @@ html {
 	padding: 7px;
 	border-radius: 20px; 
 	text-decoration: none;
-	text-decoration: underline #bdbdbd;
+	position: relative;
 }
 .cite_navigation_link:hover {
 	background: #ffffff;
 	color: #000000;
 	padding: 7px;	
 	text-decoration: none;
+}
+.cite_navigation_link:after {
+	content: "";
+	position: absolute;
+	left: 5px;
+	bottom: 7px;
+	border-bottom: 1px solid #bdbdbd;
+	width: 90%;
+}
+.cite_navigation_link:hover:after {
+	border-bottom: 0;
 }
 /*выпадающее меню ----------------------------*/
 .cite_navigation {
@@ -459,8 +470,8 @@ html {
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 
   background: #f26843;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f26843), to(#e74a35));
   background: -o-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f26843), to(#e74a35));
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 50px;
   -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
@@ -470,16 +481,16 @@ html {
 }
 
 .button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
   background: -o-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
           box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .button:active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#d84732), to(#e1613e));
   background: -o-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#d84732), to(#e1613e));
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   -webkit-box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
           box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
@@ -617,7 +628,6 @@ html {
 	position: relative;
 	width: 270px;
 	height: 324px;
-	overflow: hidden;
 }
 .hit_item:before {
 	content: url('../img/hits/hit.svg');
@@ -688,7 +698,7 @@ html {
 	left: 32px;
 	z-index: 2;
 	border-radius: 20px;
-	border: none;
+	border: none; display: none;
 
 }
 .hit_item:after {
@@ -729,8 +739,10 @@ html {
 	opacity: 1;
 }
  .hit_item:hover {
-	overflow: visible;
 	z-index: 2;
+}
+.hit_item:hover .button {
+	display: block;
 }
 .about_us {
 	background: #efe4cd url('../img/seo/waffle_background.png');
@@ -887,7 +899,7 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-top: 40px;
-	min-height: 430px;
+	height: 430px;
 	z-index: 1;
 	position: relative; 
 }
@@ -1144,6 +1156,8 @@ html {
 }
 /* -------------------inner------------------------*/
 .inner_cite_wrapper {
+	background: -o-linear-gradient(top, rgba(156,176,165,1) 0%, rgba(132,157,143,1) 40%);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(156,176,165,1)), color-stop(40%, rgba(132,157,143,1)));
 	background: linear-gradient(to bottom, rgba(156,176,165,1) 0%, rgba(132,157,143,1) 40%);
 }
 .inner_container {
@@ -1166,6 +1180,10 @@ html {
 	background-color: #d07058;
 	padding: 7px 12px;
 	margin-left: 0px;	
+}
+.catalog_button:after {
+	content: "";
+	border-bottom: 0;
 }
 .catalog_button:active {
 	-webkit-box-shadow: 0 2px 2px rgba(0, 16, 0, 0.64) inset;
@@ -1335,7 +1353,7 @@ html {
 	width: 700px;    
 	height: 37px;
 	padding-top: 7px;
-	padding-left: 12px;  display: flex; list-style: none; /*------ переделать -----*/
+	padding-left: 12px;  
 }
 .checkbox_input {
 	display: none;		
@@ -1378,6 +1396,7 @@ html {
 .check_input:hover +.check_box {
 	opacity: 1;
 }
+
 .apply_button {
 	border: 2px solid white;
 	width: 145px;
@@ -1421,6 +1440,9 @@ html {
 	bottom: 5px;
 }
 .radio input[type="radio"] {
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
 	display: none;
 }
 .radio .radio_element {
